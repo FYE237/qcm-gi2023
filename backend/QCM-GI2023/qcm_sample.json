@@ -1,0 +1,52 @@
+{
+    "idGame": "610d26771f6f5049a07e8a5f",
+    "questions": [
+      {
+        "number": 1,
+        "question": "What is the capital of France?",
+        "possibleAnswers": [
+          {
+            "number": 1,
+            "answer": "Paris"
+          },
+          {
+            "number": 2,
+            "answer": "Madrid"
+          },
+          {
+            "number": 3,
+            "answer": "Berlin"
+          },
+          {
+            "number": 4,
+            "answer": "London"
+          }
+        ],
+        "correctResponseNumber": 1
+      },
+      {
+        "number": 2,
+        "question": "Who painted the Mona Lisa?",
+        "possibleAnswers": [
+          {
+            "number": 1,
+            "answer": "Leonardo da Vinci"
+          },
+          {
+            "number": 2,
+            "answer": "Vincent van Gogh"
+          },
+          {
+            "number": 3,
+            "answer": "Pablo Picasso"
+          },
+          {
+            "number": 4,
+            "answer": "Claude Monet"
+          }
+        ],
+        "correctResponseNumber": 1
+      }
+    ]
+  }
+  
