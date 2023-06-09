@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Quiz Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 100px;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .question {
+      margin-bottom: 20px;
+    }
+    
+    .options label {
+      display: block;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    
+    .options input[type="radio"] {
+      margin-right: 10px;
+    }
+    
+    .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Quiz</h2>
+    <form>
+      <div class="question">
+        <h3>Question 1:</h3>
+        <p>What is the capital of France?</p>
+        <div class="options">
+          <label>
+            <input type="radio" name="q1" value="a">
+            Paris
+          </label>
+          <label>
+            <input type="radio" name="q1" value="b">
+            London
+          </label>
+          <label>
+            <input type="radio" name="q1" value="c">
+            Rome
+          </label>
+          <label>
+            <input type="radio" name="q1" value="d">
+            Madrid
+          </label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <h3>Question 2:</h3>
+        <p>Which planet is known as the Red Planet?</p>
+        <div class="options">
+          <label>
+            <input type="radio" name="q2" value="a">
+            Mars
+          </label>
+          <label>
+            <input type="radio" name="q2" value="b">
+            Jupiter
+          </label>
+          <label>
+            <input type="radio" name="q2" value="c">
+            Venus
+          </label>
+          <label>
+            <input type="radio" name="q2" value="d">
+            Saturn
+          </label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <h3>Question 3:</h3>
+        <p>Which is the largest ocean on Earth?</p>
+        <div class="options">
+          <label>
+            <input type="radio" name="q3" value="a">
+            Pacific Ocean
+          </label>
+          <label>
+            <input type="radio" name="q3" value="b">
+            Indian Ocean
+          </label>
+          <label>
+            <input type="radio" name="q3" value="c">
+            Atlantic Ocean
+          </label>
+          <label>
+            <input type="radio" name="q3" value="d">
+            Arctic Ocean
+          </label>
+        </div>
+      </div>
+      
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
