@@ -19,7 +19,7 @@ module.exports = {
     async newGame(req, res, next){
         try {
             
-            if(!req.body.name || !req.body.startTime ||  !req.body.duration)
+            if(!req.body.data.name || !req.body.data.startTime ||  !req.body.data.duration)
                 {
                     throw new CodeError("Game creator or start time or duration not specified")
                 } 
@@ -52,7 +52,7 @@ module.exports = {
             
             const qcm = new gameQcm({
                 idGame: req.idGame,
-                questions: req.body.qcm
+                questions: req.body.data.qcm
             })
 
             await qcm.save()
@@ -121,7 +121,7 @@ module.exports = {
                 name: name,
                 idGame: idGame,
                 points: 0,
-                idSocket: idSocket
+                idSocket: socket.id
             })
     
             const gameData = await game.findOne({idGame:idGame});

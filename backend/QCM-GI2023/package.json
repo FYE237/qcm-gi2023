@@ -4,7 +4,7 @@
     "description": "QCM-GI2023 is the ultimate backend solution",
     "main": "src/server.js",
     "scripts": {
-        "setup": "npm install && npm update",
+        "setup": "npm install",
         "start": "node src/server.js",
         "start-dev": "NODE_ENV=dev nodemon src/server.js"
     },

@@ -23,7 +23,8 @@ module.exports = {
             res.json({status: true, message: 'User created succesfully'})
 
         } catch (error) {
-            if(error.code === 1100)
+            console.log(error)
+            if(error.code === 11000)
                 {
                     res.status(400);
                     res.json({status: false, message: 'Duplicate user'})
